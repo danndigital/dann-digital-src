@@ -1,19 +1,42 @@
 @import (inline) "../../../node_modules/tachyons/css/tachyons.min.css";
 
+/**
 @black: #000;
 @navy: #3251c7;
 @lightYellow: #fbf1a9;
+@silver: #000;
+ */
 
-:root {
-  --primary: #3251c7;
+@black: #002848;
+@navy: #4c96d7;
+@lightYellow: #fbf1a9;
+@silver: #f3f3f3;
+
+.bg-black{
+  background-color: @black;
 }
 
 .bg-primary{
   background-color: @navy;
 }
 
+.bg-silver{
+  background-color: @silver;
+}
+
+.black{
+  color: @black;
+}
+
+.silver{
+  color: @silver;
+}
+
+
+
 body{
   font-family: 'Domine', serif;
+  color: @black;
 }
 
 a{
@@ -30,7 +53,7 @@ h1,h2,h3,h4,h5,h6{
 
 header{
   border-top:5px solid @navy;
-  background: @lightYellow url('../img/duotone-clouds.png') no-repeat 0 80%;
+  background: url('../img/duotone-clouds-blue.png') no-repeat 0 70%;
   background-size: cover;
   //background-image: linear-gradient(220deg, #fe3c5a, #ff8667, #ffbe75, #fff283);
 }
