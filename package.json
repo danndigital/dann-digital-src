@@ -4,18 +4,36 @@
   "description": "Source code for dann.digital",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html --out-dir ./build",
-    "build": "parcel src/index.html --out-dir ./build"
+    "local": "node node_modules/webpack/bin/webpack.js --env.environment=local --progress -p --hide-modules",
+    "dev": "node node_modules/webpack/bin/webpack.js --env.environment=dev --progress -p --hide-modules",
+    "staging": "node node_modules/webpack/bin/webpack.js --env.environment=staging --progress -p --hide-modules",
+    "production": "node node_modules/webpack/bin/webpack.js --env.environment=production --progress -p --hide-modules",
+    "watch": "node node_modules/webpack/bin/webpack.js --env.environment=local --progress --watch --watch-poll --hide-modules"
   },
   "keywords": [],
   "author": "Simon Dann",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "normalize.css": "^8.0.0",
     "tachyons": "^4.9.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.2.0",
+    "cross-env": "^5.1.5",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "html-loader": "^0.5.1",
+    "imagemin-webpack-plugin": "^2.1.5",
     "less": "^3.0.4",
-    "parcel-bundler": "^1.7.1"
+    "less-loader": "^4.0.5",
+    "less-plugin-autoprefix": "^1.5.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^3.12.0",
+    "webpack-manifest-plugin": "^1.3.2",
+    "webpack-shell-plugin": "^0.5.0"
   }
 }

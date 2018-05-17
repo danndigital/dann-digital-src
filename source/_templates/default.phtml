@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title><?= smart_quotes((isset($title) ? ($title . ' &mdash; ' . $this->site('title')) : $this->site('title'))); ?></title>
+
+    <meta name="author" content="<?= (isset($author) ? $author : $this->site('author')); ?>>">
+    <meta name="description" content="<?= (isset($extract) ? $extract : (isset($description) ? $description : $this->site('description'))) ?>" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="tapestry.cloud"/>
+
+    <link rel="canonical" href="<?= $this->getUrl() ?>" />
+    <link rel="stylesheet" type="text/css" href="<?= $this->asset('css/main.css') ?>" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?= $this->url('img/favicon.ico') ?>"/>
+</head>
+<body>
+
+<?= $this->section('content') ?>
+
+</body>
+</html>

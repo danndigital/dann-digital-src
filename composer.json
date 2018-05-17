@@ -1,0 +1,24 @@
+{
+  "name": "danndigital/dann-digital-src",
+  "description": "Source for dann.digital",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Simon Dann",
+      "email": "simon.dann@gmail.com"
+    },
+    {
+      "name": "Debbie Dann",
+      "email": "simon.dann@gmail.com"
+    }
+  ],
+  "require": {
+    "tapestry-cloud/tapestry": "dev-master",
+    "tapestry-cloud/asset-plugin": "^1.0"
+  },
+  "autoload": {
+    "files": [
+      "helpers.php"
+    ]
+  }
+}

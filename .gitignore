@@ -1,3 +1,12 @@
-.cache
-build
-node_modules
+.idea
+.*_cache
+.tmp/
+build_*/
+node_modules/
+vendor/
+source/img
+source/css
+source/js
+source/manifest.json
+db.sqlite
+!.production_301_cache

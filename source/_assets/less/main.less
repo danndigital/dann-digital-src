@@ -1,0 +1,36 @@
+@import (inline) "../../../node_modules/tachyons/css/tachyons.min.css";
+
+@black: #000;
+@navy: #3251c7;
+@lightYellow: #fbf1a9;
+
+:root {
+  --primary: #3251c7;
+}
+
+.bg-primary{
+  background-color: @navy;
+}
+
+body{
+  font-family: 'Domine', serif;
+}
+
+a{
+  color: @navy;
+
+  &:hover{
+    color: @black;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  border-top:5px solid @navy;
+  background: @lightYellow url('../img/duotone-clouds.png') no-repeat 0 80%;
+  background-size: cover;
+  //background-image: linear-gradient(220deg, #fe3c5a, #ff8667, #ffbe75, #fff283);
+}
