@@ -1,0 +1,90 @@
+@import (inline) "../node_modules/normalize.css/normalize.css";
+
+/* Modules */
+@import (inline) '../node_modules/tachyons/src/_box-sizing.css';
+@import (inline) '../node_modules/tachyons/src/_aspect-ratios.css';
+@import (inline) '../node_modules/tachyons/src/_images.css';
+@import (inline) '../node_modules/tachyons/src/_background-size.css';
+@import (inline) '../node_modules/tachyons/src/_background-position.css';
+@import (inline) '../node_modules/tachyons/src/_outlines.css';
+@import (inline) '../node_modules/tachyons/src/_borders.css';
+@import (inline) '../node_modules/tachyons/src/_border-colors.css';
+@import (inline) '../node_modules/tachyons/src/_border-radius.css';
+@import (inline) '../node_modules/tachyons/src/_border-style.css';
+@import (inline) '../node_modules/tachyons/src/_border-widths.css';
+@import (inline) '../node_modules/tachyons/src/_box-shadow.css';
+@import (inline) '../node_modules/tachyons/src/_code.css';
+@import (inline) '../node_modules/tachyons/src/_coordinates.css';
+@import (inline) '../node_modules/tachyons/src/_clears.css';
+@import (inline) '../node_modules/tachyons/src/_display.css';
+@import (inline) '../node_modules/tachyons/src/_flexbox.css';
+@import (inline) '../node_modules/tachyons/src/_floats.css';
+@import (inline) '../node_modules/tachyons/src/_font-family.css';
+@import (inline) '../node_modules/tachyons/src/_font-style.css';
+@import (inline) '../node_modules/tachyons/src/_font-weight.css';
+@import (inline) '../node_modules/tachyons/src/_forms.css';
+@import (inline) '../node_modules/tachyons/src/_heights.css';
+@import (inline) '../node_modules/tachyons/src/_letter-spacing.css';
+@import (inline) '../node_modules/tachyons/src/_line-height.css';
+@import (inline) '../node_modules/tachyons/src/_links.css';
+@import (inline) '../node_modules/tachyons/src/_lists.css';
+@import (inline) '../node_modules/tachyons/src/_max-widths.css';
+@import (inline) '../node_modules/tachyons/src/_widths.css';
+@import (inline) '../node_modules/tachyons/src/_overflow.css';
+@import (inline) '../node_modules/tachyons/src/_position.css';
+@import (inline) '../node_modules/tachyons/src/_opacity.css';
+@import (inline) '../node_modules/tachyons/src/_rotations.css';
+@import (inline) '../node_modules/tachyons/src/_skins.css';
+@import (inline) '../node_modules/tachyons/src/_skins-pseudo.css';
+@import (inline) '../node_modules/tachyons/src/_spacing.css';
+@import (inline) '../node_modules/tachyons/src/_negative-margins.css';
+@import (inline) '../node_modules/tachyons/src/_tables.css';
+@import (inline) '../node_modules/tachyons/src/_text-decoration.css';
+@import (inline) '../node_modules/tachyons/src/_text-align.css';
+@import (inline) '../node_modules/tachyons/src/_text-transform.css';
+@import (inline) '../node_modules/tachyons/src/_type-scale.css';
+@import (inline) '../node_modules/tachyons/src/_typography.css';
+@import (inline) '../node_modules/tachyons/src/_utilities.css';
+@import (inline) '../node_modules/tachyons/src/_visibility.css';
+@import (inline) '../node_modules/tachyons/src/_white-space.css';
+@import (inline) '../node_modules/tachyons/src/_vertical-align.css';
+@import (inline) '../node_modules/tachyons/src/_hovers.css';
+@import (inline) '../node_modules/tachyons/src/_z-index.css';
+@import (inline) '../node_modules/tachyons/src/_nested.css';
+@import (inline) '../node_modules/tachyons/src/_styles.css';
+
+/* Variables */
+/* Importing here will allow you to override any variables in the modules */
+@import (inline) '../node_modules/tachyons/src/_colors.css';
+@import (inline) '../node_modules/tachyons/src/_media-queries.css';
+
+:root {
+  --primary: #3251c7;
+}
+
+.bg-primary{
+  background-color: var(--primary);
+}
+
+body{
+  font-family: 'Domine', serif;
+}
+
+a{
+  color: var(--primary);
+
+  &:hover{
+    color: var(--black);
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  border-top:5px solid var(--primary);
+  background: var(--light-yellow) url('duotone-clouds.png') no-repeat 0 80%;
+  background-size: cover;
+  //background-image: linear-gradient(220deg, #fe3c5a, #ff8667, #ffbe75, #fff283);
+}
