@@ -1,0 +1,25 @@
+<?php
+/**
+ * @var stdClass $previous_next
+ * @var string $title
+ * @var string $content
+ * @var \Tapestry\Entities\ViewFileTrait|\Tapestry\Plates\Template $this
+ */
+$this->layout('_templates/default');
+?>
+<main>
+    <header class="w-100 pv3 ph3 ph6-ns bg-silver black" style="background: #4c96d7;border-top-color: #002848;">
+        <div class="mw9 center tc">
+            <a href="<?= $this->url('/') ?>">
+                <img src="<?= $this->url('img/logo-white.png') ?>" alt="Dann Digital (Digital is within a speech bubble)" title="Dann Digital (Digital is within a speech bubble)" style="height: 32px;">
+            </a>
+        </div>
+    </header>
+
+    <div class="pv5 ph3 ph6-ns tl measure-wide f3 center">
+        <h1 class="f5 ttu tracked fw6 normal tc">
+            <?= $title ?>
+        </h1>
+        <?= $this->getContent() ?>
+    </div>
+</main>
